@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Resources</title>
+    <link rel="shortcut icon" href = "logoo.webp" type="image/x-icon">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    :root {
+        --primary: #1e3a8a;
+        --secondary: #1e40af;
+        --accent: #0369a1;
+        --success: #0a1d39;
+        --danger: #4a1111;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        color: #cbd5e1;
+        min-height: 100vh;
+    }
+
+    .container {
+        background: #1e293b;
+        padding: 50px;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+        color: #60a5fa;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    .resource-list {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        gap: 20px;
+    }
+
+    .resource-list li {
+        padding: 25px;
+        background: linear-gradient(135deg, #1e3a8a25 0%, #0369a125 100%);
+        border-left: 5px solid var(--accent);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(3, 105, 161, 0.3);
+    }
+
+    .resource-list li:hover {
+        transform: translateX(8px);
+        box-shadow: 0 12px 24px rgba(3, 105, 161, 0.4);
+        background: linear-gradient(135deg, #1e3a8a35 0%, #0369a135 100%);
+    }
+
+    .resource-list a {
+        color: #60a5fa;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1em;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .resource-list a:hover {
+        color: #93c5fd;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-bottom: 30px;
+        padding: 12px 24px;
+        background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+        color: #f1f5f9;
+        text-decoration: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        font-size: 1em;
+    }
+
+    .back-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px rgba(30, 58, 138, 0.5);
+    }
+    </style>
+
+</head>
+<body>
+    <header style="background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); color: white; padding: 40px 20px; text-align: center; margin: -20px -20px 30px -20px; border-radius: 8px 8px 0 0;">
+        <h2 style="font-size: 28px; margin-bottom: 8px;">Learning Hub</h2>
+        <p style="font-size: 14px; opacity: 0.9;">Explore essential resources for AI and chatbot development</p>
+    </header>
+    <div class="container">
+        <button class="back-btn" onclick="history.back()">← Back</button>
+        
+        <h1>Chatbot Resources</h1>
+        
+        <ul class="resource-list">
+            <li><a href="https://platform.openai.com/docs" target="_blank">OpenAI Documentation</a></li>
+            <li><a href="https://developers.google.com/machine-learning" target="_blank">Google Machine Learning</a></li>
+            <li><a href="https://huggingface.co/" target="_blank">Hugging Face Models</a></li>
+            <li><a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a></li>
+            <li><a href="https://pytorch.org/" target="_blank">PyTorch</a></li>
+        </ul>
+    </div>
+</body>
+</html>

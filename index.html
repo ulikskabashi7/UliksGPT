@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chatbot</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="preset-buttons">
+     <button>Try these questions!</button>
+    <button onclick="sendPresetMessage('Tell me a joke')">Tell me a joke</button>
+    <button onclick="sendPresetMessage('Hello')">Hello</button>
+    <button onclick="sendPresetMessage('How are you?')">How are you?</button>
+    <button onclick="sendPresetMessage('What is your name?')">What is your name?</button>
+</div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>UliksGPT</h1>
+            <img src="logoo.webp" alt="UliksGPT Logo" class="logo" style="width: 50px; height: 50px; margin-top: 10px;">
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button> 
+            <button onclick="location.reload()" class="refresh-btn">Refresh</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>

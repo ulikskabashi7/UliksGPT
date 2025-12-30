@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href = "logoo.webp" type="image/x-icon">
+</head>
+<body>
+<div class="top-bar1">
+<h1 class="GPT" style="cursor: pointer;" onclick="window.location.href='index.html';">UliksGPT</h1>
+</div>
+    
+<style>
+
+    .GPT {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        color: white;
+        margin-left: 10%;
+        margin-top: 10px;
+        background-color: #1a3a52;
+        border-radius:15px;
+        padding: 10px 20px;
+    }
+    .GPT:hover {
+        background-color: #0f2438;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+    .top-bar1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: auto;
+        background: linear-gradient(180deg, #0f2438, #1a3a52);
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+        gap: 15px;
+        box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        border-radius: 0;
+        border-radius: 15px;
+
+    }
+
+    .top-bar1 a {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        padding: 12px;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .top-bar1 a:hover {
+        background: white;
+        color: #1a3a52;
+        transform: translateX(5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    
+    .top-bar {
+        justify-content: center;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+   .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background: linear-gradient(180deg, #1a3a52, #0f2438);
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 0 10px 10px 0;
+}
+
+.top-bar a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.top-bar a:hover {
+    background: white;
+    color: #007bff;
+    transform: translateX(5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+body {
+    background: linear-gradient(135deg, #0a1929 0%, #132f4c 100%);
+    min-height: 100vh;
+}
+
+.content {
+    padding-top: 200px;
+    padding-left: 280px;
+    padding-right: 40px;
+}
+
+.content h1, .content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #64b5f6 0%, #90caf9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.top-bar {
+    width: 240px;
+    background: linear-gradient(180deg, #0f1b2e 0%, #1a2f4a 100%);
+    gap: 20px;
+    padding: 30px 15px;
+}
+
+.top-bar a {
+    padding: 14px 16px;
+    border-radius: 25px;
+    background: rgba(100, 181, 246, 0.12);
+    border: 1.5px solid rgba(100, 181, 246, 0.3);
+}
+
+.top-bar a:hover {
+    background: rgba(100, 181, 246, 0.25);
+    border-color: #64b5f6;
+    box-shadow: 0 8px 20px rgba(100, 181, 246, 0.3);
+}
+
+div[style*="padding: 20px"] {
+    background: rgba(15, 27, 46, 0.6);
+    border-radius: 30px;
+    margin: 40px 0;
+    padding: 50px 40px !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 181, 246, 0.2);
+}
+
+img {
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(100, 181, 246, 0.4);
+    transition: all 0.4s ease;
+}
+
+img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(100, 181, 246, 0.6);
+}
+    .content {
+        padding-top: 180px;
+         padding-left: 180px;
+         
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+        color:whitesmoke;
+       margin-top: 10px;
+    }
+     h1{
+
+        line-height: 1.6;
+        text-align: center;
+        color:whitesmoke;
+        margin-top: 10px;
+        
+    }
+    h1:hover{
+        
+        line-height: 1.6;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #007bff;
+        margin-top: 10px;
+    }
+    h2{
+        
+        line-height: 1.6;
+        text-align: center;
+        color:whitesmoke;
+        padding-top: 10px;
+    }
+    h2:hover{
+       
+        line-height: 1.6;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #007bff;
+        padding-top: 10px;
+    }
+    p:hover{
+        
+        line-height: 1.6;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #007bff;
+        margin-top: 10px;
+    }
+    body {
+        background-color: rgba(0, 13, 73, 0.988);
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    img {
+        width: 250px;
+        height: 200px;
+        position: relative;
+        margin:auto;
+        border-radius:15px;
+        box-shadow: 0 4px 10px rgb(118, 200, 255);
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #007bff;
+        height:5px;
+        margin-top: 50px;
+    }
+   
+</style>
+
+<div class="top-bar">
+    <a href="index.html">ChatBOT</a>
+    <a href="about.html">About AI</a>
+    <a href="resources.html">Resources</a>
+</div>
+
+<div class="content">
+    <h1>Welcome to the Home Page of my ChatBOT</h1>
+    <p>
+        This is the home page of the website. You can find information about the ChatBOT,
+        learn about AI, and access various resources here.
+    </p>
+
+ <div class="img">
+
+    <a href="index.html"><img src="logoo.webp" alt="Logo"></a>
+</div>
+<hr>
+<div style="padding: 20px; text-align: center;">
+    <h2 style="color: whitesmoke;">Key Features</h2>
+    <p>Explore our AI-powered chatbot with advanced natural language processing capabilities.</p>
+    
+    <h2 style="color: whitesmoke;">Getting Started</h2>
+    <p>Visit the ChatBOT section to interact with our intelligent assistant.</p>
+    
+    <h2 style="color: whitesmoke;">Learn More</h2>
+    <p>Check out the About AI and Resources pages for deeper insights into artificial intelligence.</p>
+</div>
+</div>
+<hr>
+
+</body>
+</html>
